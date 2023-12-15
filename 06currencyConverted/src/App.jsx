@@ -36,7 +36,7 @@ function App() {
      <InputBox  name="From" amount={fromAmount} onamountChange={setfromAmount} currency={fromCurrency} oncurrencyChange={setfromCurrency} exchangeCurData={ans}/>
      <button id="swapBtn" onClick={handleSwap}>Swap</button>
      <InputBox name="To"  amount={toAmount} onamountChange={settoAmount} currency={toCurrency} oncurrencyChange={settoCurrency} exchangeCurData={ans}/>
-     <button id="convertBtn">Convert USD TO INR</button>
+     <button id="convertBtn">Convert {fromCurrency.toUpperCase()} TO {toCurrency.toUpperCase()}</button>
      </div>
    </>
   )
